@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGame"
+    android:orientation="vertical"
+    android:weightSum="12"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/ammo_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="125dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/cannonball" />
+
+        <TextView
+            android:id="@+id/ammo_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toEndOf="@+id/ammo_img"
+            android:text="@string/shot_count_placeholder"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/tile_grid"
+        android:background="@drawable/back_plate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:rowCount="1"
+        android:padding="15dp"/>
+
+
+</LinearLayout>

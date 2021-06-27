@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Splunk</string>
+    <string name="start_button">Start!</string>
+    <string name="app_by">App by: Cole</string>
+    <string name="select_size_txt">Select Board Size!</string>
+    <string name="small_4x5">Small &#160;&#160;&#160;&#160;&#160;&#160;&#160;4x5</string>
+    <string name="medium_5x7">Medium &#160;&#160;&#160;5x7</string>
+    <string name="large_7x9">Large &#160;&#160;&#160;&#160;&#160;&#160;&#160;7x9</string>
+    <string name="select_diff_txt">Select Difficulty!</string>
+    <string name="easy_txt">Easy</string>
+    <string name="medium_txt">Medium</string>
+    <string name="hard_txt">Hard</string>
+    <string name="back">Back</string>
+    <string name="play">Play</string>
+    <string name="game_name">game_name</string>
+    <string name="back_to_menu">Back to Main Menu</string>
+    <string name="sorry">Sorry!</string>
+    <string name="ammo_nt">You Ran out of Ammo!</string>
+    <string name="better_luck">Better Luck Next Time!</string>
+    <string name="you_sunk_all">You Sunk All the Enemy Ships!</string>
+    <string name="congrats">Congrats!</string>
+    <string name="shot_count_placeholder">x0</string>
+    <string name="zero_placeholder">0</string>
+    <string name="wins">Wins:</string>
+    <string name="losses">Losses:</string>
+    <string name="total_shots_fired">Shots Fired:</string>
+    <string name="accuracy">Accuracy:</string>
+    <string name="lifetime_stats">Lifetime Stats:</string>
+    <string name="ok">Ok</string>
+    <string name="delete_data">delete data</string>
+</resources>

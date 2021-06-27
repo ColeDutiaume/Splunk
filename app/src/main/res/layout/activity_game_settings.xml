@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".GameSettings">
+
+    <LinearLayout
+        android:id="@+id/size_radio_linear"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_plate"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197">
+
+        <TextView
+            android:id="@+id/select_size_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/select_size_txt"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/board_size_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/small_radio_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSizeRadioButtonClicked"
+                android:padding="5dp"
+                android:text="@string/small_4x5"
+                android:textSize="20sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <RadioButton
+                android:id="@+id/med_radio_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSizeRadioButtonClicked"
+                android:padding="5dp"
+                android:text="@string/medium_5x7"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/large_radio_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onSizeRadioButtonClicked"
+                android:padding="5dp"
+                android:text="@string/large_7x9"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diff_radio_linear"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_plate"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/size_radio_linear"
+        app:layout_constraintVertical_bias="0.07">
+
+        <TextView
+            android:id="@+id/select_diff_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="@string/select_diff_txt"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/difficulty_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/easy_diff_radio_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onDiffRadioButtonClicked"
+                android:padding="5dp"
+                android:text="@string/easy_txt"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/medium_diff_radio_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onDiffRadioButtonClicked"
+                android:padding="5dp"
+                android:text="@string/medium_txt"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/hard_diff_radio_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onDiffRadioButtonClicked"
+                android:padding="5dp"
+                android:text="@string/hard_txt"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back_btn_game_settings"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="@drawable/arrow_left"
+        android:text="@string/back"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/play_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diff_radio_linear" />
+
+    <Button
+        android:id="@+id/play_btn"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:background="@drawable/arrow_right"
+        android:text="@string/play"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/back_btn_game_settings"
+        app:layout_constraintTop_toBottomOf="@+id/diff_radio_linear" />
+</androidx.constraintlayout.widget.ConstraintLayout>
